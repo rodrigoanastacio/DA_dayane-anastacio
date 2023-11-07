@@ -1,0 +1,80 @@
+.c-navbar {
+  display: none;
+
+  @include media-up(md) {
+    display: flex;
+  }
+
+  &.openMenu {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 9;
+    background-color: var(--gray-700);
+
+    display: flex;
+    flex-direction: column;
+
+    & .c-navbar__nav {
+      padding: 80px 0;
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    & .c-container {
+      @include flex-element(column, center, flex-start);
+    }
+
+    & .c-navbar__item {
+      color: var(--off-white);
+    }
+  }
+
+  & .closeMenu {
+    position: absolute;
+    top: rem(28px);
+    right: rem(16px);
+    width: rem(24px);
+    height: rem(24px);
+    cursor: pointer;
+
+    @include media-up(md) {
+      display: none;
+    }
+  }
+
+  &__nav {
+    list-style: none;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @include media-up(md) {
+      flex-direction: row;
+    }
+  }
+
+  &__list {
+    text-decoration: none;
+  }
+
+  &__item {
+    display: block;
+    font-size: rem(24px);
+    padding: rem(24px) 0;
+
+    @include media-up(md) {
+      padding: rem(8px) rem(16px);
+      font-size: rem(16px);
+    }
+
+    &--active {
+      color: var(--orange-100);
+    }
+  }
+}

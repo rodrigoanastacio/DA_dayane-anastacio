@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "dayane-anastacio",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -10,6 +10,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^3.4.0"
+    "astro": "^3.4.0",
+    "postcss": "^8.4.30",
+    "postcss-preset-env": "^9.1.4",
+    "sass": "^1.69.5"
   }
 }

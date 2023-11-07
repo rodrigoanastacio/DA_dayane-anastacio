@@ -1,0 +1,12 @@
+---
+interface Props {
+  href: string;
+  title: string;
+}
+
+const { href, title } = Astro.props;
+---
+
+<li class="c-navbar__list">
+  <a href={href} title={title} class="c-navbar__item">{title}</a>
+</li>

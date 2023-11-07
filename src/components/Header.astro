@@ -1,0 +1,50 @@
+---
+import Navbar from "./Menu/Navbar.astro";
+import Item from "./Menu/Item.astro";
+---
+
+<header class="c-header">
+  <div class="c-container">
+    <div>Dayane Anastacio</div>
+
+    <Navbar>
+      <Item href="contato" title="Contato" />
+      <Item href="sobre" title="Sobre Mim" />
+    </Navbar>
+
+    <div data-js-menuMobile class="c-header__hamburger">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="16"
+        viewBox="0 0 20 16"
+        fill="none"
+      >
+        <path
+          d="M19.75 8C19.75 8.21549 19.6644 8.42215 19.512 8.57452C19.3597 8.7269 19.153 8.8125 18.9375 8.8125H1.0625C0.847012 8.8125 0.640349 8.7269 0.487976 8.57452C0.335603 8.42215 0.25 8.21549 0.25 8C0.25 7.78451 0.335603 7.57785 0.487976 7.42548C0.640349 7.2731 0.847012 7.1875 1.0625 7.1875H18.9375C19.153 7.1875 19.3597 7.2731 19.512 7.42548C19.6644 7.57785 19.75 7.78451 19.75 8ZM1.0625 2.3125H18.9375C19.153 2.3125 19.3597 2.2269 19.512 2.07452C19.6644 1.92215 19.75 1.71549 19.75 1.5C19.75 1.28451 19.6644 1.07785 19.512 0.925476C19.3597 0.773103 19.153 0.6875 18.9375 0.6875H1.0625C0.847012 0.6875 0.640349 0.773103 0.487976 0.925476C0.335603 1.07785 0.25 1.28451 0.25 1.5C0.25 1.71549 0.335603 1.92215 0.487976 2.07452C0.640349 2.2269 0.847012 2.3125 1.0625 2.3125ZM18.9375 13.6875H1.0625C0.847012 13.6875 0.640349 13.7731 0.487976 13.9255C0.335603 14.0778 0.25 14.2845 0.25 14.5C0.25 14.7155 0.335603 14.9222 0.487976 15.0745C0.640349 15.2269 0.847012 15.3125 1.0625 15.3125H18.9375C19.153 15.3125 19.3597 15.2269 19.512 15.0745C19.6644 14.9222 19.75 14.7155 19.75 14.5C19.75 14.2845 19.6644 14.0778 19.512 13.9255C19.3597 13.7731 19.153 13.6875 18.9375 13.6875Z"
+          fill="black"></path>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<script>
+  const nav = document.querySelector("[data-js-navbar]");
+  const menuIcon = document.querySelector("[data-js-menuMobile]");
+  const closeIcon = document.querySelector("[data-js-closeMenu]");
+
+  const showMenu = () => {
+    nav?.classList.add("openMenu");
+    document.body.classList.add("u-overflow-hidden");
+    menuIcon?.classList.add("u-hidden");
+  };
+
+  const closeMenu = () => {
+    nav?.classList.remove("openMenu");
+    menuIcon?.classList.remove("u-hidden");
+    document.body.classList.remove("u-overflow-hidden");
+  };
+
+  menuIcon?.addEventListener("click", () => showMenu());
+  closeIcon?.addEventListener("click", () => closeMenu());
+</script>
