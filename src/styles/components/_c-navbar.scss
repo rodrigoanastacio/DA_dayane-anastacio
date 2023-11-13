@@ -25,9 +25,9 @@
       align-items: flex-start;
     }
 
-    & .c-container {
-      @include flex-element(column, center, flex-start);
-    }
+    // & .c-container {
+    //   @include flex-element(column, center, flex-start);
+    // }
 
     & .c-navbar__item {
       color: var(--off-white);
@@ -67,6 +67,7 @@
     display: block;
     font-size: rem(24px);
     padding: rem(24px) 0;
+    text-decoration: none;
 
     @include media-up(md) {
       padding: rem(8px) rem(16px);

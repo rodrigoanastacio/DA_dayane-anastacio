@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --brown-100: #887360;
+  --brown-200: #6d5f53;
+  --brown-300: #705d4c;
+
+  --wheat-50: #f6e4c1;
+  --wheat-100: #f5deb3;
+  --wheat-200: #f2d49d;
+  
+  --gray-100: #d6d4d4;
+  --gray-500: #706c6c;
+  --gray-700: #323334;
+  --gray-800: #0d1525;
+
+  --white: #f9f9f9;
+}
+
+html,
+body {
+  font-family: "Lato", sans-serif;
+
+  p {
+    color: var(--gray-500);
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  button {
+    cursor: pointer;
+  }
+}
