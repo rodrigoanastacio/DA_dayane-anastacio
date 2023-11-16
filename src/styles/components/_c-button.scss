@@ -1,0 +1,11 @@
+.c-button {
+  padding: rem(16px) rem(32px);
+  font-size: rem(20px);
+  display: inline-flex;
+
+  &--primary {
+    background: linear-gradient(90deg, #887360 0%, #705D4C 48.45%, #6D5F53 100%);
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.13);
+    color: #EEEAE3;
+  }
+}
