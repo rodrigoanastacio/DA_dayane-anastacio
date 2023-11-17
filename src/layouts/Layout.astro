@@ -1,6 +1,5 @@
 ---
 import Header from "../components/Header.astro";
-import Hero from "../components/Hero.astro";
 interface Props {
   title: string;
 }
@@ -23,12 +22,35 @@ import "../styles/main.scss";
       href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
   <body>
     <Header />
-    <Hero />
     <slot />
+
+    <!-- Swiper JS -->
+    <script type="module">
+      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+
+      const swiper = new Swiper(".c-carousel", {
+        slidesPerView: 1.1,
+        spaceBetween: 16,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+      });
+    </script>
   </body>
 </html>

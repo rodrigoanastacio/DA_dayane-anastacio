@@ -1,6 +1,7 @@
 .c-title {
   font-size: rem(40px);
   line-height: rem(48px);
+  color: var(--gray-700);
   
   &__pretitle {
     color: var(--gray-700);
@@ -14,5 +15,9 @@
     font-size: rem(48px);
     line-height: rem(56px);
     font-weight: 700;
+  }
+
+  &__subtitle {
+    font-size: rem($font-subtitle);
   }
 }

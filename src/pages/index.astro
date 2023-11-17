@@ -1,5 +1,25 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import Carousel from "../components/Carousel.astro";
 ---
 
-<Layout title="Dayane Anastacio" />
+<Layout title="Dayane Anastacio">
+  <main>
+    <Hero />
+    <section class="l-section l-section--services">
+      <div class="c-container">
+        <header class="l-section--services__header">
+          <h2 class="c-title">Serviços Oferecidos</h2>
+          <p class="c-title__subtitle">
+            Pensando na melhor forma de atender as necessidades na área de moda
+            e estilo, separei os meus serviços em três categorias super
+            completas.
+          </p>
+        </header>
+
+        <Carousel />
+      </div>
+    </section>
+  </main>
+</Layout>

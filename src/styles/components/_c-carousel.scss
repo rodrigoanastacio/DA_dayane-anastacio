@@ -1,0 +1,65 @@
+.c-carousel {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  
+  &__slide {
+    width: 100%;
+    height: 510px;
+    border-radius: rem(8px);
+    overflow: hidden;
+
+    &:hover {
+      .c-carousel__text-content {
+        transform: translateY(-10px);
+      }
+    }
+  }
+  
+  &__link {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: rem(8px);
+  }
+  
+  &__slide-image {
+    border-radius: rem(8px);
+    position: absolute;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__text-content {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: rem(24px);
+    transition: transform 0.3s ease;
+  }
+
+  &__slide-title {
+    color: var(--gray-50);
+    font-size: rem(24px);
+    line-height: rem(30px);
+    margin-bottom: rem(16px);
+  }
+
+  &__slide-text {
+    color: var(--gray-50);
+    font-size: rem(16px);
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #887360 0%, rgba(136, 115, 96, 0.50) 27.6%, rgba(136, 115, 96, 0.00) 100%);
+  }
+}
