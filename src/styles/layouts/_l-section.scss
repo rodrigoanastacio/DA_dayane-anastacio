@@ -1,12 +1,14 @@
 .l-section {
   &--services {
     padding: rem(80px) 0;
+    overflow: hidden;
 
     & .c-container {
-      @include flex-element(column, start, center)
+      @include flex-element(column, start, center);
+      position: relative;
     }
 
-    &__header{
+    &__header {
       flex: 0 0 auto;
       width: 66.66666667%;
 
