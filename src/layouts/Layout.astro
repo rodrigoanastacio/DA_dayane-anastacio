@@ -1,5 +1,6 @@
 ---
 import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 interface Props {
   title: string;
 }
@@ -32,6 +33,7 @@ import "../styles/main.scss";
   <body>
     <Header />
     <slot />
+    <Footer />
 
     <!-- Swiper JS -->
     <script type="module">
