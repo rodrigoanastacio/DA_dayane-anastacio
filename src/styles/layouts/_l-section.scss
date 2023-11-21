@@ -26,21 +26,45 @@
     background: linear-gradient(180deg, #f5deb3 0%, #f6e4c1 100%);
     padding: rem(60px) 0;
 
+    & .c-container {
+      @include flex-element(column, start, center);
+
+      @include media-up(md) {
+        @include flex-element(row, center, center);
+      }
+    }
+
     &__wrapper {
-      flex: 0 0 auto;
-      width: 66.66666667%;
+      width: 100%;
+
+      @include media-up(md) {
+        flex: 0 0 auto;
+        width: 66.66666667%;
+      }
 
       & + .l-section--conversion__wrapper {
         flex: 0 0 auto;
         width: 33.33333333%;
 
         display: flex;
-        justify-content: center;
+        justify-content: start;
+
+        @include media-up(md) {
+          justify-content: center;
+        }
       }
     }
 
     .c-title {
       margin-bottom: rem(16px);
+
+      &__subtitle {
+        margin-bottom: rem(32px);
+
+        @include media-up(md) {
+          margin-bottom: initial;
+        }
+      }
     }
   }
 }
