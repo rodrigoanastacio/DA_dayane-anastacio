@@ -9,8 +9,12 @@
     }
 
     &__header {
-      flex: 0 0 auto;
-      width: 66.66666667%;
+      width: 100%;
+
+      @include media-up(md) {
+        flex: 0 0 auto;
+        width: 66.66666667%;
+      }
 
       & .c-title {
         margin-bottom: rem(16px);
@@ -43,13 +47,14 @@
       }
 
       & + .l-section--conversion__wrapper {
-        flex: 0 0 auto;
-        width: 33.33333333%;
-
+        width: 100%;
         display: flex;
         justify-content: start;
 
         @include media-up(md) {
+          flex: 0 0 auto;
+          width: 33.33333333%;
+
           justify-content: center;
         }
       }
