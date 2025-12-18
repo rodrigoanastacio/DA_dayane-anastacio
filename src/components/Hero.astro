@@ -1,14 +1,66 @@
+---
+import { Briefcase, FileText, Scale, TrendingUp } from "lucide-astro";
+---
+
 <section class="c-hero">
   <div class="c-container">
     <div class="c-hero__headline">
       <p class="c-title__pretitle">Gestão e Assistência Remota</p>
       <h1 class="c-title c-title__display">
-        Gestão para Advogados que Querem Crescer com Organização, Estrutura e Qualidade de Vida
+        Gestão para Advogados que querem crescer com organização, estrutura e
+        qualidade de vida
       </h1>
       <p class="c-title__subtitle">
-        Consultoria especializada em gestão, processos e escalabilidade para firmas jurídicas que buscam crescimento sustentável.
+        Consultoria especializada em gestão, processos e escalabilidade para
+        firmas jurídicas que buscam crescimento sustentável.
       </p>
-      <a href="#" class="c-button c-button--primary">Chamada para ação</a>
+
+      <div class="c-hero__features">
+        <div class="c-hero__feature">
+          <div class="c-hero__icon-wrapper c-hero__icon-wrapper--blue">
+            <Scale class="c-hero__icon" />
+          </div>
+          <div class="c-hero__feature-content">
+            <h3 class="c-hero__feature-title">Eficiência Legal</h3>
+            <p class="c-hero__feature-desc">Processos otimizados</p>
+          </div>
+        </div>
+
+        <div class="c-hero__feature">
+          <div class="c-hero__icon-wrapper c-hero__icon-wrapper--green">
+            <TrendingUp class="c-hero__icon" />
+          </div>
+          <div class="c-hero__feature-content">
+            <h3 class="c-hero__feature-title">Crescimento</h3>
+            <p class="c-hero__feature-desc">Escalabilidade provada</p>
+          </div>
+        </div>
+
+        <div class="c-hero__feature">
+          <div class="c-hero__icon-wrapper c-hero__icon-wrapper--yellow">
+            <Briefcase class="c-hero__icon" />
+          </div>
+          <div class="c-hero__feature-content">
+            <h3 class="c-hero__feature-title">Gestão</h3>
+            <p class="c-hero__feature-desc">Melhor administração</p>
+          </div>
+        </div>
+
+        <div class="c-hero__feature">
+          <div class="c-hero__icon-wrapper c-hero__icon-wrapper--light-blue">
+            <FileText class="c-hero__icon" />
+          </div>
+          <div class="c-hero__feature-content">
+            <h3 class="c-hero__feature-title">Documentação</h3>
+            <p class="c-hero__feature-desc">Conformidade garantida</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="c-hero__cta">
+        <a href="#" class="c-button c-button--primary">Agendar consultoria</a>
+        <a href="#" class="c-button c-button--secondary">Conhecer serviços</a>
+      </div>
     </div>
 
     <div class="c-hero__image">
