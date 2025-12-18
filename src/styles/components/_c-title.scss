@@ -2,15 +2,14 @@
   font-size: rem(40px);
   line-height: rem(48px);
   color: var(--gray-700);
-  
+
   &__pretitle {
-    color: var(--gray-700);
+    color: var(--gray-600);
     font-size: $font-pretitle;
     line-height: $line-height-pretitle;
     font-weight: 500;
-    text-transform: uppercase;
   }
-  
+
   &__display {
     font-size: rem(48px);
     line-height: rem(56px);
