@@ -2,20 +2,19 @@
   padding: rem(16px) rem(32px);
   font-size: rem(20px);
   display: inline-flex;
-  border: 1px solid;
+  border: 2px solid;
+  border-radius: rem(8px);
 
   &--primary {
-    background: var(--blue-500);
+    background: var(--blue-300);
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.13);
     color: var(--white);
-    border-radius: rem(32px);
-    border-color: var(--blue-500);
+    border-color: var(--blue-300);
   }
 
   &--secondary {
     background: transparent;
-    color: var(--blue-500);
-    border-radius: rem(32px);
-    border-color: var(--blue-500);
+    color: var(--blue-300);
+    border-color: var(--blue-300);
   }
 }

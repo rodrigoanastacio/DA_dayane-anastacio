@@ -7,14 +7,14 @@
   border-bottom: 1px solid var(--blue-50);
 
   @include media-up(md) {
-    height: 48rem;
+    height: rem(608px);
   }
 
   & .c-container {
     @include flex-element(column, center, center, rem(24px));
 
     @include media-up(md) {
-      @include flex-element(row, center, space-between);
+      @include flex-element(row, start, space-between);
     }
   }
 
@@ -26,7 +26,6 @@
     @include media-up(md) {
       flex: 0 0 auto;
       width: 50%;
-      padding: 0;
     }
   }
 
@@ -39,7 +38,7 @@
       display: inline-flex;
       padding: rem(4px) rem(16px);
       border-radius: rem(32px);
-      border: 1px solid var(--blue-500);
+      border: 1px solid var(--blue-100);
     }
 
     &__subtitle {
