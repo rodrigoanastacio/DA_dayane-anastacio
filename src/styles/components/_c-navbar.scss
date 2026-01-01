@@ -68,6 +68,7 @@
     font-size: rem(24px);
     padding: rem(24px) 0;
     text-decoration: none;
+    color: var(--blue-300);
 
     @include media-up(md) {
       padding: rem(8px) rem(16px);

@@ -2,6 +2,7 @@
   background-color: var(--white);
   height: rem(80px);
   box-shadow: 0px 4px 0 0px rgba(0, 0, 0, 0.02);
+  border-bottom: 1px solid var(--blue-50);
 
   &__hamburger {
     cursor: pointer;
