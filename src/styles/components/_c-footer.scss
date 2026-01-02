@@ -1,5 +1,4 @@
 .c-footer {
-  background-color: var(--gray-700);
   height: rem(90px);
 
   & .c-container {
@@ -7,25 +6,20 @@
     align-items: start;
     justify-content: center;
 
+    border-top: 1px solid var(--rose-50);
+
     @include media-up(md) {
       flex-direction: row;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
     }
   }
 
   &__copy {
-    color: var(--white);
+    color: var(--gray-700);
     font-size: rem(14px);
     line-height: 24px;
   }
 
-  &__developed-by {
-    color: var(--white);
-    font-size: rem(14px);
 
-    > span {
-      opacity: 0.5;
-    }
-  }
 }
